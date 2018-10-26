@@ -1,0 +1,43 @@
+.navbar .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar .nav-item > a {
+    color: #999999;
+}
+
+.navbar .nav-item > a:hover {
+    color: #ffffff;
+}
+
+.navbar a.navbar-brand {
+    margin-left: 50px;
+}
+
+.navbar ul.navbar-nav {
+    
+    margin-left: 1100px ;
+}
+
+
+@media screen and (min-width:1200px){
+    .navbar a.navbar-brand {
+        margin-left: 50px;
+    }
+    
+    .navbar ul.navbar-nav {
+        margin-left: 96% ;
+    }
+
+}
+
+@media screen and (min-width:992px) and (max-width:1199px){
+    .navbar a.navbar-brand {
+        margin-left: 50px;
+    }
+    
+    .navbar ul.navbar-nav {
+        margin-left: 95% ;
+    }
+
+}

@@ -1,0 +1,69 @@
+<nav class="sidebar" [ngClass]="{'sidebarPushRight': isActive}">
+  <div class="list-group">
+    <a routerLink="dashboard" [routerLinkActive]="['active']" class="list-group-item">
+      <span>
+        <fa-icon [icon]="faHome"></fa-icon> &nbsp;&nbsp;Dashboard
+      </span>
+    </a>
+  
+    <a [routerLink]="['service']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+      <span>
+        <fa-icon [icon]="faWrench"></fa-icon> &nbsp;&nbsp;Service
+      </span>
+    </a>
+   
+    <div class="nested-menu">
+      <a (click)="addExpandClass('pages')" class="list-group-item">
+        <span>
+          <fa-icon [icon]="faPlus"></fa-icon> &nbsp;&nbsp;Menu
+        </span>
+      </a>
+      <li class="nested" [class.expand]="showMenu === 'pages'">
+        <ul class="submenu">
+          <li>
+            <a href="javascript:void(0)"><span>Submenu1</span></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"><span>Submenu1</span></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"><span>Submenu1</span></a>
+          </li>
+        </ul>
+      </li>
+    </div>
+
+    <div class="nested-menu" id="profile">
+      <a (click)="addExpandClass('profile')" class="list-group-item">
+        <span class="">
+            <fa-icon [icon]="faUser"></fa-icon>
+        </span>
+      </a>
+      <li class="nested" [class.expand]="showMenu === 'profile'">
+        <ul class="submenu">
+          <li>
+            <a href="javascript:void(0)" class="dropdown-item">
+              <fa-icon [icon]="faClipboard"></fa-icon>&nbsp;&nbsp;Profile
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="dropdown-item">
+              <fa-icon [icon]="faEnvelope"></fa-icon>&nbsp;&nbsp;Inbox
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="dropdown-item">
+              <fa-icon [icon]="faCog"></fa-icon>&nbsp;&nbsp;Settings
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="dropdown-item">
+              <fa-icon [icon]="faSignOutAlt"></fa-icon>&nbsp;&nbsp;Log Out
+            </a>
+          </li>
+        </ul>
+      </li>
+    </div>
+
+  </div>
+</nav>

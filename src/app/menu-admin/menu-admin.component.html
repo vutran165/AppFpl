@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+
+    <a class="navbar-brand" routeLink="/admin">Admin</a>
+    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" (click)="toggleSidebar()"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <fa-icon [icon]="faAlignJustify"></fa-icon>
+    </button>
+
+
+
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+            <li class="nav-item dropdown" ngbDropdown placement="bottom-right">
+                <a href="javascript:void(0)" class="nav-link" ngbDropdownToggle>
+                    <fa-icon [icon]="faUser"></fa-icon>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" ngbDropdownMenu>
+                    <a href="javascript:void(0)" class="dropdown-item">
+                        <fa-icon [icon]="faClipboard"></fa-icon>&nbsp;&nbsp;Profile
+                    </a>
+                    <a href="javascript:void(0)" class="dropdown-item">
+                        <fa-icon [icon]="faEnvelope"></fa-icon>&nbsp;&nbsp;Inbox
+                    </a>
+                    <a href="javascript:void(0)" class="dropdown-item">
+                        <fa-icon [icon]="faCog"></fa-icon>&nbsp;&nbsp;Settings
+                    </a>
+                    <a href="javascript:void(0)" class="dropdown-item">
+                        <fa-icon [icon]="faSignOutAlt"></fa-icon>&nbsp;&nbsp;Log Out
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+</nav>

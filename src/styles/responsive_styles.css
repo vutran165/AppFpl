@@ -1,0 +1,125 @@
+
+
+
+@media screen and (max-width: 992px) {
+
+    section, footer {
+        padding: 60px 0;
+    }
+
+    .sidebar {
+      top: 56px;
+      left: 0px;
+    }
+
+    .feature-thumb,
+    .about-info,
+    .team-thumb,
+    .footer-info {
+        margin-bottom: 50px;
+    }
+
+    .contact-image {
+        margin-top: 50px;
+    }
+
+    body.push-right .sidebar{
+        left: 235px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+
+}
+  
+@media only screen and (max-width: 767px){
+    h1{
+        font-size: 2.5em;
+    }
+
+    h1, h2, h3 {
+        line-height: normal;
+    }
+
+    .top-nav-collapse .navbar-brand {
+        color: #252525;
+        font-weight: 600;
+      }
+
+      .top-nav-collapse .nav li a {
+        color: #575757;
+      }
+
+      .footer-info {
+        margin-right: 0;
+      }
+  
+      .footer-info.newsletter-form {
+        margin-bottom: 0;
+      }
+  
+      .entry-form {
+        display: block;
+        margin: 0 auto;
+      }
+}
+
+@media only screen and  (max-width: 580px){
+    h2 {
+        font-size: 1.8em;
+      }
+  
+      #testimonial .item {
+        padding: 2em;
+      }
+  
+      .contact-image {
+        margin-top: 0;
+      }
+}
+
+@media only screen and (max-width:580px){
+    h1 {
+        font-size: 2em;
+      }
+  
+      #home h3 {
+        font-size: 14px;
+      }
+  
+      .entry-form {
+        border-radius: 0;
+        padding: 2em;
+        max-width: 100%;
+        max-height: 100%;
+        width: inherit;
+        height: inherit;
+      }
+}
+
+@media print {
+    .sidebar {
+      display: none !important;
+    }
+} 
+
+@media screen and (min-width: 992px) and (max-width: 1349px)
+{
+    section {
+        position: relative;
+        padding: 100px 0;
+      }
+      
+    #profile {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 1349px) {
+    #profile {
+        display: none;
+    }
+}
