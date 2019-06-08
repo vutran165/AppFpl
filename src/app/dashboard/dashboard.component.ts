@@ -19,7 +19,7 @@ export class DashboardComponent implements OnInit {
   faPenSquare = faPenSquare;
   faTrash = faTrash;
 
-  constructor(private modalService: NgbModal, private service: ServiceRestService, private http: HttpClient) { }
+  constructor(private modalService: NgbModal, private http: HttpClient) { }
 
   add() {
     const modalRef = this.modalService.open(DashboardCreateComponent, { size: 'lg' });
@@ -39,9 +39,10 @@ export class DashboardComponent implements OnInit {
   }
 
   inItData() {
-    return this.service.getServices().subscribe((res) => {
-      console.log(res);
-    });
+    return null;
+    // return this.service.getServices().subscribe((res) => {
+    //   console.log(res);
+    // });
 
   }
 

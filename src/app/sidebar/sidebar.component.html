@@ -11,6 +11,12 @@
         <fa-icon [icon]="faWrench"></fa-icon> &nbsp;&nbsp;Service
       </span>
     </a>
+
+    <a [routerLink]="['leagues']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+      <span>
+        <fa-icon [icon]="faWrench"></fa-icon> &nbsp;&nbsp;Leagues
+      </span>
+    </a>
    
     <div class="nested-menu">
       <a (click)="addExpandClass('pages')" class="list-group-item">
